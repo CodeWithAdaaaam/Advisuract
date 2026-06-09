@@ -5,6 +5,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ArrowRight, Users, Zap } from 'lucide-react';
 import { useLanguage } from "@/context/LanguageContext";
+import { motion } from "framer-motion";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -61,7 +62,7 @@ export default function About() {
         
         {/* Colonne de texte */}
         <div ref={textRef}>
-          <motion-div> {/* Note: Optionnel si tu veux ajouter du Framer Motion en plus de GSAP */}
+          <motion.div> {/* Note: Optionnel si tu veux ajouter du Framer Motion en plus de GSAP */}
             <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-black tracking-tighter">
               {t.title}
             </h2>
@@ -71,7 +72,7 @@ export default function About() {
             <button className="group flex items-center gap-2 text-violet-600 font-bold hover:gap-4 transition-all">
               {t.cta} <ArrowRight size={20} className="transition-transform" />
             </button>
-          </motion-div>
+          </motion.div>
         </div>
 
         {/* Grille de statistiques (Design épuré sur fond blanc) */}

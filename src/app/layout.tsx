@@ -12,6 +12,9 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 export const metadata: Metadata = {
   title: "Advisuract",
   description: "Data & AI Consulting",
+  verification: {
+    google: "i7IIxMZUQzaBrihgx3UKHRRzG6U3GWxCAuiqvdAY4_A",
+  },
   icons: {
     icon: "/favicon.ico",
   },
